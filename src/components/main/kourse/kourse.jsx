@@ -1,21 +1,29 @@
-import { Box, Button, Grid, Text } from "@chakra-ui/react";
+import { Box, Button, Grid, GridItem, Text } from "@chakra-ui/react";
 
 export default function Kourse() {
   return (
-    <Grid gridTemplateColumns="auto auto auto auto" gap="40px" mt="20px">
-      <Box
-        minH="200px"
+    <Grid
+      gridTemplateColumns={{
+        sm: "auto auto",
+        lg: "auto auto auto",
+        xl: "auto auto auto auto",
+      }}
+      gap={{ base: "10px", xl: "20px" }}
+      mt="20px"
+    >
+      <GridItem
+        minH={{ base: "200px", xl: "200px" }}
         overflow="hidden"
         p="10px"
         _hover={{ border: "1px solid blue" }}
         border="1px solid transparent"
-        w="280px"
+        w={{ lg: "100%", xl: "280px" }}
         m="0 auto"
         borderRadius="20px"
         bg="white"
         position="relative"
       >
-        <Text color="black" fontSize="25px">
+        <Text color="black" fontSize={{ base: "18px", lg: "22px", xl: "25px" }}>
           Программи-рование
         </Text>
         <Box position="relative">
@@ -23,7 +31,7 @@ export default function Kourse() {
             maxH="100px"
             overflow="hidden"
             color="black"
-            fontSize="17px"
+            fontSize={{ base: "14px", lg: "15px", xl: "17px" }}
             fontWeight="100"
             mt="10px"
           >
@@ -31,10 +39,15 @@ export default function Kourse() {
             doloremque aliquam a minima iusto corporis minus reprehenderit
             tenetur vel.
           </Text>
-          <Box w="100%" h="100%" className="gradient"></Box>
+          <Box
+            w="100%"
+            h="100%"
+            bottom={{ lg: "0px", xl: "30px" }}
+            className="gradient"
+          ></Box>
         </Box>
         <Button
-          fontSize="14px"
+          fontSize={{ base: "12px", lg: "13px", xl: "14px" }}
           fontWeight="200"
           variant="unstyle"
           position="absolute"
@@ -46,20 +59,20 @@ export default function Kourse() {
         >
           Всего (kourse.length) курса
         </Button>
-      </Box>
-      <Box
-        minH="200px"
+      </GridItem>
+      <GridItem
+        minH={{ base: "200px", xl: "200px" }}
         overflow="hidden"
         p="10px"
         _hover={{ border: "1px solid blue" }}
         border="1px solid transparent"
-        w="280px"
+        w={{ lg: "100%", xl: "280px" }}
         m="0 auto"
         borderRadius="20px"
         bg="white"
         position="relative"
       >
-        <Text color="black" fontSize="25px">
+        <Text color="black" fontSize={{ base: "18px", lg: "22px", xl: "25px" }}>
           Программи-рование
         </Text>
         <Box position="relative">
@@ -67,7 +80,7 @@ export default function Kourse() {
             maxH="100px"
             overflow="hidden"
             color="black"
-            fontSize="17px"
+            fontSize={{ base: "14px", lg: "15px", xl: "17px" }}
             fontWeight="100"
             mt="10px"
           >
@@ -75,10 +88,15 @@ export default function Kourse() {
             doloremque aliquam a minima iusto corporis minus reprehenderit
             tenetur vel.
           </Text>
-          <Box w="100%" h="100%" className="gradient"></Box>
+          <Box
+            w="100%"
+            h="100%"
+            bottom={{ lg: "0px", xl: "30px" }}
+            className="gradient"
+          ></Box>
         </Box>
         <Button
-          fontSize="14px"
+          fontSize={{ base: "12px", lg: "13px", xl: "14px" }}
           fontWeight="200"
           variant="unstyle"
           position="absolute"
@@ -90,20 +108,20 @@ export default function Kourse() {
         >
           Всего (kourse.length) курса
         </Button>
-      </Box>
-      <Box
-        minH="200px"
+      </GridItem>
+      <GridItem
+        minH={{ base: "200px", xl: "200px" }}
         overflow="hidden"
         p="10px"
         _hover={{ border: "1px solid blue" }}
         border="1px solid transparent"
-        w="280px"
+        w={{ lg: "100%", xl: "280px" }}
         m="0 auto"
         borderRadius="20px"
         bg="white"
         position="relative"
       >
-        <Text color="black" fontSize="25px">
+        <Text color="black" fontSize={{ base: "18px", lg: "22px", xl: "25px" }}>
           Программи-рование
         </Text>
         <Box position="relative">
@@ -111,7 +129,7 @@ export default function Kourse() {
             maxH="100px"
             overflow="hidden"
             color="black"
-            fontSize="17px"
+            fontSize={{ base: "14px", lg: "15px", xl: "17px" }}
             fontWeight="100"
             mt="10px"
           >
@@ -119,10 +137,15 @@ export default function Kourse() {
             doloremque aliquam a minima iusto corporis minus reprehenderit
             tenetur vel.
           </Text>
-          <Box w="100%" h="100%" className="gradient"></Box>
+          <Box
+            w="100%"
+            h="100%"
+            bottom={{ lg: "0px", xl: "30px" }}
+            className="gradient"
+          ></Box>
         </Box>
         <Button
-          fontSize="14px"
+          fontSize={{ base: "12px", lg: "13px", xl: "14px" }}
           fontWeight="200"
           variant="unstyle"
           position="absolute"
@@ -134,20 +157,20 @@ export default function Kourse() {
         >
           Всего (kourse.length) курса
         </Button>
-      </Box>
-      <Box
-        minH="200px"
+      </GridItem>
+      <GridItem
+        minH={{ base: "200px", xl: "200px" }}
         overflow="hidden"
         p="10px"
         _hover={{ border: "1px solid blue" }}
         border="1px solid transparent"
-        w="280px"
+        w={{ lg: "100%", xl: "280px" }}
         m="0 auto"
         borderRadius="20px"
         bg="white"
         position="relative"
       >
-        <Text color="black" fontSize="25px">
+        <Text color="black" fontSize={{ base: "18px", lg: "22px", xl: "25px" }}>
           Программи-рование
         </Text>
         <Box position="relative">
@@ -155,7 +178,7 @@ export default function Kourse() {
             maxH="100px"
             overflow="hidden"
             color="black"
-            fontSize="17px"
+            fontSize={{ base: "14px", lg: "15px", xl: "17px" }}
             fontWeight="100"
             mt="10px"
           >
@@ -163,10 +186,15 @@ export default function Kourse() {
             doloremque aliquam a minima iusto corporis minus reprehenderit
             tenetur vel.
           </Text>
-          <Box w="100%" h="100%" className="gradient"></Box>
+          <Box
+            w="100%"
+            h="100%"
+            bottom={{ lg: "0px", xl: "30px" }}
+            className="gradient"
+          ></Box>
         </Box>
         <Button
-          fontSize="14px"
+          fontSize={{ base: "12px", lg: "13px", xl: "14px" }}
           fontWeight="200"
           variant="unstyle"
           position="absolute"
@@ -178,7 +206,7 @@ export default function Kourse() {
         >
           Всего (kourse.length) курса
         </Button>
-      </Box>
+      </GridItem>
     </Grid>
   );
 }

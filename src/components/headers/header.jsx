@@ -1,5 +1,6 @@
 import { Box, Button, Container, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
+import SizeExample from "./menu/burgerMenu";
 
 export default function Header() {
   return (
@@ -13,9 +14,11 @@ export default function Header() {
         justifyContent="space-between"
         p="0 20px"
       >
-        <Text>LOGO</Text>
+        <Link to="/">
+          <Text>LOGO</Text>
+        </Link>
         <Box
-          display="flex"
+          display={{ base: "none", md: "flex" }}
           alignItems="center"
           justifyContent="center"
           gap="40px"
@@ -24,24 +27,41 @@ export default function Header() {
             style={{ textDecoration: "none", color: "black" }}
             to="category"
           >
-            <Text fontSize="16px" fontWeight="500">
+            <Text
+              fontSize={{ sm: "12px", lg: "14px", xl: "16px" }}
+              fontWeight="500"
+            >
               Каталог курсов
             </Text>
           </Link>
           <Link style={{ textDecoration: "none", color: "black" }} to="/free">
-            <Text fontSize="16px" fontWeight="500">
+            <Text
+              fontSize={{ sm: "12px", lg: "14px", xl: "16px" }}
+              fontWeight="500"
+            >
               Учиться бесплатно
             </Text>
           </Link>
           <Link style={{ textDecoration: "none", color: "black" }} to="media">
-            <Text fontSize="16px" fontWeight="500">
+            <Text
+              fontSize={{ sm: "12px", lg: "14px", xl: "16px" }}
+              fontWeight="500"
+            >
               Медиа Нетологии
             </Text>
           </Link>
         </Box>
-        <Button variant="unstyle" className="button-65">
-          login
-        </Button>
+        <Box display="flex" gap="20px">
+          <SizeExample sizes={["full"]} />
+          <Button
+            variant="unstyle"
+            w={{ sm: "100px", lg: "140px", xl: "160px" }}
+            fontSize={{ sm: "13x", lg: "14px", xl: "15px" }}
+            className="button-65"
+          >
+            login
+          </Button>
+        </Box>
       </Box>
     </Container>
   );
